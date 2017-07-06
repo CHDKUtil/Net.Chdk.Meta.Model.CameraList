@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace Net.Chdk.Meta.Model.CameraList
+﻿namespace Net.Chdk.Meta.Model.CameraList
 {
-    public sealed class ListPlatformData
+    public sealed class ListPlatformData : PlatformData<ListPlatformData, ListRevisionData, ListSourceData>
     {
-        public IDictionary<string, ListRevisionData> Revisions { get; set; }
     }
 }

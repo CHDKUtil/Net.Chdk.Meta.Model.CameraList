@@ -36,13 +36,16 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="ListPlatformData.cs" />
     <Compile Include="ListRevisionData.cs" />
     <Compile Include="ListSourceData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Model.Base\src\Net.Chdk.Meta.Model.Base\Net.Chdk.Meta.Model.Base.csproj">
+      <Project>{A4C2D557-E6C8-4B78-A5E8-3CDE0D175918}</Project>
+      <Name>Net.Chdk.Meta.Model.Base</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\..\..\Net.Chdk.Core\src\Net.Chdk.Shared\Net.Chdk.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

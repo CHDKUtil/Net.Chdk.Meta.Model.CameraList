@@ -1,7 +1,6 @@
 ﻿namespace Net.Chdk.Meta.Model.CameraList
 {
-    public sealed class ListSourceData
+    public sealed class ListSourceData : SourceData<ListSourceData>
     {
-        public string Revision { get; set; }
     }
 }
